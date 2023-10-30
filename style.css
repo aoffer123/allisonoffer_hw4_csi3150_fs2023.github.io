@@ -1,0 +1,190 @@
+/* * {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+} 
+
+/* DRY */
+
+.filter-container {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #00008b;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-weight: bold;
+  border-right: 1px solid #00008b;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  justify-content: center;
+}
+
+.filter-year {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 10px;
+}
+
+.make-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 10px;
+}
+
+.filter-mileage {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 10px;
+}
+
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 10px;
+}
+
+.color-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 10px;
+}
+
+#mileageSelect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#makeSelect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#minYear {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#maxYear {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#maxPriceSelect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#colorSelect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #00008b;
+  outline: none;
+  font-size: 16px;
+}
+
+#filterButton {
+  width: 150px;
+  margin-left: 38px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 3px solid #00008b;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #de970b;
+  color: #00008b;
+  border-radius: 5px;
+}
+
+.car-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 30px;
+  color: #de970b;
+}
+
+.card-header {
+  justify-content: center;
+  border-bottom: 3px solid #00008b;
+}
+
+.car-container {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.car-container .car-card {
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  flex: 1 0 300px;
+  transition: transform 0.4s ease-out;
+}
+
+.car-container .car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-container {
+  display: flex;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  color: #de970b;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #00008b;
+}
+.card-content {
+  padding: 10px;
+  margin: auto;
+}
+
+.card-content p {
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  border: 1px solid #ccc;
+  justify-content: center;
+  margin: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
